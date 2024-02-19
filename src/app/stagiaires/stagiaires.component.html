@@ -1,0 +1,21 @@
+<h1 align="center">Listes des stagiaires</h1>
+
+<img [src]="logo"/>
+
+<h4>Coach : {{formateur | uppercase | mypipe}}</h4>
+
+<button (click)="greeting()" class="btn btn-primary">Cliquer</button>
+
+<h2 *ngIf="afficherMsg">Consommation des API</h2>
+<table border="1" align="center" class="table">
+  <tr>
+    <th>ID</th><th>Name</th><th>Username</th><th>Email</th><th>Address</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{user.id}}</td>
+    <td>{{user.name}}</td>
+    <td>{{user.username}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.address.city}}</td>
+  </tr>
+</table>

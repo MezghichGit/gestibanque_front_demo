@@ -1,0 +1,16 @@
+<table border="1" align="center" class="table">
+  <thead>
+    <tr>
+      <th>Id</th><th>Nom</th><th>Adresse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let banque of banques">
+      <td>{{banque.id}}</td>
+      <td>{{banque.nom}}</td>
+      <td>{{banque.adresse}}</td>
+
+    </tr>
+    </tbody>
+  </table>
+
