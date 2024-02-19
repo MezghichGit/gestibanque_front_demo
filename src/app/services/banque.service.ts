@@ -11,4 +11,9 @@ export class BanqueService {
   {
      return this.http.get("http://127.0.0.1:8080/banques/"); // consommation d'une api rest
   }
+
+  addBanque(banque:any)
+  {
+     return this.http.post("http://127.0.0.1:8080/banques/",banque); // consommation d'une api rest
+  }
 }
