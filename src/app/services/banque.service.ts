@@ -16,4 +16,9 @@ export class BanqueService {
   {
      return this.http.post("http://127.0.0.1:8080/banques/",banque); // consommation d'une api rest
   }
+
+  deleteBanque(banque:any)
+  {
+     return this.http.delete("http://127.0.0.1:8080/banques/"+banque.id); // consommation d'une api rest
+  }
 }
