@@ -43,4 +43,9 @@ export class ListeBanqueComponent implements OnInit {
       error => console.log(error + "Problème dans l'api")
     );
   }
+
+  updateBanque(banque:any){
+
+    this.router.navigate(['updateBanque' + '/' + banque.id]);
+  }
 }

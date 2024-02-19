@@ -1,0 +1,14 @@
+<h1 align="center">Mise à jour d'une banque</h1>
+
+  <div class="form-group">
+    <label for="nomBanque">Nom de la banque</label>
+    <input [(ngModel)]="nom" type="text" class="form-control" id="nomBanque"  placeholder="Nom Banque">
+  </div>
+
+  <div class="form-group">
+    <label for="adresseBanque">Adresse de la banque</label>
+    <input  [(ngModel)]="adresse" type="text"  class="form-control" id="adresseBanque"  placeholder="Adresse Banque">
+  </div>
+
+
+  <button (click)="updateBanque()" class="btn btn-primary">Mise à jour banque</button>

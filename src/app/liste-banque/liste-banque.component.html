@@ -9,7 +9,7 @@
       <td>{{banque.id}}</td>
       <td>{{banque.nom}}</td>
       <td>{{banque.adresse}}</td>
-      <td><button class="btn btn-warning" >Modifier</button></td>
+      <td><button class="btn btn-warning" (click)="updateBanque(banque)">Modifier</button></td>
       <td><button class="btn btn-danger" (click)="deleteBanque(banque)">Supprimer</button></td>
     </tr>
     </tbody>

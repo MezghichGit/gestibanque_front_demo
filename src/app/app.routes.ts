@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { AddBanqueComponent } from './add-banque/add-banque.component';
 import { ListeBanqueComponent } from './liste-banque/liste-banque.component';
 import { ContactComponent } from './contact/contact.component';
+import { UpdateBanqueComponent } from './update-banque/update-banque.component';
 
 export const routes: Routes = [
 
@@ -17,6 +18,10 @@ export const routes: Routes = [
   {
     path:"contact",
     component:ContactComponent
+  },
+  {
+    path:"updateBanque/:id",
+    component:UpdateBanqueComponent
   }
 
 
