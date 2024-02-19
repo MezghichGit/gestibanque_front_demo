@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BanqueService } from '../services/banque.service';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-liste-banque',
@@ -11,7 +12,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ListeBanqueComponent implements OnInit{
   banques:any;
-  constructor(private banqueService: BanqueService) {
+  constructor(private banqueService: BanqueService, private router:Router) {
   }
 
   ngOnInit(): void {

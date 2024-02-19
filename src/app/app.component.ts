@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { StagiairesComponent } from "./stagiaires/stagiaires.component";
 import { PostComponent } from "./post/post.component";
 import { ListeBanqueComponent } from "./liste-banque/liste-banque.component";
+import { NavbarComponent } from "./navbar/navbar.component";
 
 
 @Component({
@@ -12,7 +13,7 @@ import { ListeBanqueComponent } from "./liste-banque/liste-banque.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, CommonModule, StagiairesComponent, PostComponent, ListeBanqueComponent]
+    imports: [RouterOutlet, CommonModule, StagiairesComponent, PostComponent, ListeBanqueComponent, NavbarComponent]
 })
 
 
